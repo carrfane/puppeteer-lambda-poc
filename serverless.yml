@@ -1,0 +1,13 @@
+service: chromium
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  timeout: 300
+  memorySize: 1024
+
+functions:
+  hello:
+    handler: handler.hello
